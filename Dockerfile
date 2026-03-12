@@ -1,4 +1,4 @@
-FROM php:8.2-fpm
+FROM wordpress:php8.2-fpm-alpine
 
 # Install WordPress dependencies
 RUN apt-get update && apt-get install -y \
