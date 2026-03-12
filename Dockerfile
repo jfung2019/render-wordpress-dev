@@ -2,7 +2,7 @@ FROM php:8.2-apache
 
 # Install WordPress dependencies
 RUN apt-get update && apt-get install -y \
-    mysql-client \
+    mariadb-client \
     && rm -rf /var/lib/apt/lists/*
 
 # Download WordPress
